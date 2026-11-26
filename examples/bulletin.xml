@@ -1,0 +1,6 @@
+<rss version="2.0"><channel><title>Public notices</title><link>https://notices.example</link><description>Fictional demo feed.</description>
+<item><title>Waterfront meeting moves to North Hall</title><link>https://notices.example/waterfront-update</link><description>The city clerk corrected the venue for Thursday’s waterfront meeting. It will take place at North Hall at 18:00. The earlier notice listed East Hall; the time is unchanged.</description></item>
+<item><title>Library consultation opens for public comment</title><link>https://notices.example/library</link><description>The library consultation will accept written feedback for two weeks.</description></item>
+<item><title>New archive catalogue is available</title><link>https://notices.example/archive</link><description>The revised archive catalogue is available in the reading room.</description></item>
+<item><title>Weekend scores are in</title><link>https://notices.example/scores</link><description>The local table tennis league published the final score.</description></item>
+</channel></rss>

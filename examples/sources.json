@@ -1,0 +1,4 @@
+{
+  "rss_sources": [{"name": "Your newsroom", "rss_url": "https://news.example/feed.xml", "bias": "newsroom"}],
+  "html_sources": []
+}

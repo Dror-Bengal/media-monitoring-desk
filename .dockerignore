@@ -1,0 +1,8 @@
+.env
+.env.*
+__pycache__/
+*.sqlite3*
+.DS_Store
+.git
+docs
+README.md

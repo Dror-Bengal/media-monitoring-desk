@@ -1,0 +1,32 @@
+{
+  "brief": "Track corrections to the venue and time of the waterfront public meeting. The previously published venue was East Hall. Also track the library consultation and routine archive coverage.",
+  "rules": [
+    {
+      "match": "waterfront meeting",
+      "event": "waterfront-meeting-venue",
+      "category": "correction",
+      "urgency": "CRITICAL",
+      "also_any": [
+        "corrected",
+        "new venue",
+        "moves to"
+      ]
+    },
+    {
+      "match": "waterfront meeting",
+      "category": "coverage",
+      "urgency": "HIGH"
+    },
+    {
+      "match": "library consultation",
+      "event": "library-consultation",
+      "category": "announcement",
+      "urgency": "HIGH"
+    },
+    {
+      "match": "archive catalogue",
+      "category": "coverage",
+      "urgency": "MEDIUM"
+    }
+  ]
+}

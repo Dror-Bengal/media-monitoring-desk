@@ -1,0 +1,21 @@
+services:
+  monitor:
+    build: .
+    volumes:
+      - news:/data
+      - ./examples:/app/examples:ro
+    environment:
+      SOURCES_PATH: /app/examples/sources.json
+      WATCHLIST_PATH: /app/examples/watchlist.json
+      CLASSIFIER: ${CLASSIFIER:-rules}
+      GEMINI_MODEL: ${GEMINI_MODEL:-}
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN:-}
+      TELEGRAM_CHAT_ID: ${TELEGRAM_CHAT_ID:-}
+      GREEN_API_URL: ${GREEN_API_URL:-https://api.green-api.com}
+      GREEN_API_INSTANCE_ID: ${GREEN_API_INSTANCE_ID:-}
+      GREEN_API_TOKEN: ${GREEN_API_TOKEN:-}
+      WHATSAPP_GROUP_ID: ${WHATSAPP_GROUP_ID:-}
+      POLL_SECONDS: ${POLL_SECONDS:-300}
+volumes:
+  news:
