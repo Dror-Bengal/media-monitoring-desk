@@ -8,7 +8,7 @@ The preview shows the message body captured by both local HTTP receivers during 
 
 ## Try it from a clean clone
 
-With Docker Compose and access to this private repository:
+With Docker Compose installed, run:
 
 ```sh
 git clone https://github.com/Dror-Bengal/media-monitoring-desk.git
@@ -54,3 +54,7 @@ docker compose run --rm --entrypoint python monitor -m unittest discover -s test
 The integration tests use local HTTP receivers that validate each provider’s request path, destination and message fields. They cover a successful send, a rejection by either provider, retry without new articles, deduplication across restarts, digest timing, and the classifier’s confidence gate. No real group receives a test message.
 
 [Collectors](pipeline/scrapers/) · [Classifier](pipeline/analysis.py) · [Alert formatting](pipeline/formatting.py) · [Delivery adapters](pipeline/delivery.py) · [Queue and receipts](pipeline/worker.py)
+
+## License
+
+Nayto’s code is distributed under the [MIT License](LICENSE). Third-party software and media retain their respective terms.
